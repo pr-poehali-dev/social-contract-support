@@ -252,7 +252,8 @@ export default function Index() {
             <img
               src={CONSULTANT_IMG}
               alt="Консультант"
-              className="relative w-full h-[520px] object-cover rounded-3xl shadow-2xl border-2 border-white/10"
+              className="relative w-full h-[520px] object-cover object-[center_20%] rounded-3xl shadow-2xl border-2 border-white/10"
+              style={{ objectPosition: "center 15%" }}
             />
             <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-xl flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center">
