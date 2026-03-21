@@ -583,7 +583,7 @@ export default function Index() {
                           <div className="text-emerald-300 text-xs">{c.label}</div>
                           <div className="font-semibold">{c.val}</div>
                         </div>
-                      </div>
+                      </a>
                     ))}
                   </div>
                 </div>
