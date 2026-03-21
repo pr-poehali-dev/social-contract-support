@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
 
-const CONSULTANT_IMG = "https://cdn.poehali.dev/projects/6a6a572a-97fe-4eef-b000-6d6611ec7d41/files/1ac463b9-acc4-4b94-a82f-e8cdc5ed4237.jpg";
+const CONSULTANT_IMG = "https://cdn.poehali.dev/projects/6a6a572a-97fe-4eef-b000-6d6611ec7d41/files/20b37059-1eba-4038-8a53-396f1d0bda43.jpg";
 const SUCCESS_IMG = "https://cdn.poehali.dev/projects/6a6a572a-97fe-4eef-b000-6d6611ec7d41/bucket/edf23910-fd09-4949-aee6-0e182c951df1.jpg";
 
 function useInView(threshold = 0.15) {
