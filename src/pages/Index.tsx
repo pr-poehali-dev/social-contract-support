@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
 
-const CONSULTANT_IMG = "https://cdn.poehali.dev/projects/6a6a572a-97fe-4eef-b000-6d6611ec7d41/files/20b37059-1eba-4038-8a53-396f1d0bda43.jpg";
-const SUCCESS_IMG = "https://cdn.poehali.dev/projects/6a6a572a-97fe-4eef-b000-6d6611ec7d41/files/9233ccb5-e436-4533-bdc5-68cc91c8e5aa.jpg";
+const CONSULTANT_IMG = "https://cdn.poehali.dev/projects/6a6a572a-97fe-4eef-b000-6d6611ec7d41/files/28c32383-6a43-4dd5-aa33-953b895007de.jpg";
+const SUCCESS_IMG = "https://cdn.poehali.dev/projects/6a6a572a-97fe-4eef-b000-6d6611ec7d41/files/28c32383-6a43-4dd5-aa33-953b895007de.jpg";
 
 function useInView(threshold = 0.15) {
   const ref = useRef<HTMLDivElement>(null);
