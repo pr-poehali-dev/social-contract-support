@@ -571,12 +571,11 @@ export default function Index() {
                   <h3 className="font-bold text-xl mb-6">Наши контакты</h3>
                   <div className="flex flex-col gap-5">
                     {[
-                      { icon: "Phone", label: "Телефон", val: "+7 (800) 000-00-00" },
-                      { icon: "Mail", label: "Email", val: "info@example.ru" },
-                      { icon: "MessageCircle", label: "WhatsApp / Telegram", val: "Напишите нам" },
-                      { icon: "Clock", label: "Режим работы", val: "Пн–Пт: 9:00–18:00" },
+                      { icon: "Phone", label: "Телефон", val: "+7 (961) 115-14-42", href: "tel:+79611151442" },
+                      { icon: "Send", label: "Telegram", val: "@ProBusinessPlan", href: "https://t.me/ProBusinessPlan" },
+                      { icon: "MessageCircle", label: "WhatsApp", val: "+7 (961) 115-14-42", href: "https://wa.me/79611151442" },
                     ].map((c) => (
-                      <div key={c.label} className="flex items-center gap-4">
+                      <a key={c.label} href={c.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 hover:opacity-80 transition-opacity">
                         <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
                           <Icon name={c.icon} size={18} className="text-amber-400" />
                         </div>
