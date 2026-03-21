@@ -159,8 +159,7 @@ export default function Index() {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
               <Icon name="TrendingUp" size={16} className="text-white" />
             </div>
-            <span className="font-oswald text-lg font-bold text-emerald-800 tracking-wide">СОЦКОНТРАКТ</span>
-            <span className="text-xs bg-amber-400 text-amber-900 px-2 py-0.5 rounded-full font-semibold">PRO</span>
+            <span className="font-oswald text-lg font-bold text-emerald-800 tracking-wide">ProБизнесПлан</span>
           </button>
           <div className="hidden md:flex items-center gap-8">
             {NAV_LINKS.map((l) => (
@@ -581,7 +580,7 @@ export default function Index() {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
                 <Icon name="TrendingUp" size={16} className="text-white" />
               </div>
-              <span className="font-oswald text-lg font-bold tracking-wide">СОЦКОНТРАКТ PRO</span>
+              <span className="font-oswald text-lg font-bold tracking-wide">ProБизнесПлан</span>
             </div>
             <p className="text-emerald-400 text-sm text-center">
               © 2025 · Профессиональная разработка бизнес-планов для соцконтракта
