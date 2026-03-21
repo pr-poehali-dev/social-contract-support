@@ -57,28 +57,28 @@ const NAV_LINKS = [
 
 const SERVICES = [
   {
-    icon: "FileText",
-    title: "Бизнес-план под ключ",
-    desc: "Полный профессиональный бизнес-план для получения соцконтракта до 350 000 ₽. Учитываем все требования вашего региона.",
-    tag: "Основная услуга",
-  },
-  {
-    icon: "Search",
-    title: "Анализ ситуации",
-    desc: "Детально изучаем вашу идею и жизненную ситуацию, подбираем оптимальную стратегию для одобрения заявки.",
+    icon: "Phone",
+    title: "Бесплатная консультация",
+    desc: "Определяем ваши шансы на получение выплаты, разбираем вашу ситуацию и помогаем выбрать нишу, если вы ещё не определились.",
     tag: "Бесплатно",
   },
   {
-    icon: "ClipboardList",
-    title: "Сбор документов",
-    desc: "Помогаем собрать полный пакет документов и правильно оформить все бумаги для подачи в орган соцзащиты.",
-    tag: "В комплекте",
+    icon: "FileText",
+    title: "Бизнес-план под ключ",
+    desc: "Разработка подробного бизнес-плана с финансовыми расчётами по требованиям именно вашего региона. Вероятность одобрения — 99%.",
+    tag: "Основная услуга",
   },
   {
-    icon: "Handshake",
-    title: "Сопровождение заявки",
-    desc: "Ведём вас от первого консультации до получения денег. Отвечаем на все вопросы государственных органов.",
-    tag: "Полный цикл",
+    icon: "GraduationCap",
+    title: "Подготовка к тестированию",
+    desc: "В комплекте с бизнес-планом — вопросы для подготовки к тесту на предпринимательские компетенции. Пройдёте уверенно.",
+    tag: "Бонус",
+  },
+  {
+    icon: "RefreshCw",
+    title: "Корректировки бесплатно",
+    desc: "Если соцзащита запросит правки — внесём изменения без доплаты. Сопровождаем до получения положительного решения.",
+    tag: "Гарантия",
   },
   {
     icon: "TrendingUp",
@@ -87,20 +87,20 @@ const SERVICES = [
     tag: "Экспертиза",
   },
   {
-    icon: "Award",
-    title: "Гарантия результата",
-    desc: "Более 10 лет опыта. Если в плане найдут недочёты — исправим бесплатно до получения положительного решения.",
-    tag: "Гарантия",
+    icon: "ClipboardList",
+    title: "Закрывающие документы",
+    desc: "Подготовка отчётности и закрывающих документов по запросу органов соцзащиты в течение всего срока действия контракта.",
+    tag: "В комплекте",
   },
 ];
 
 const PORTFOLIO = [
-  { title: "Домашняя пекарня", amount: "350 000 ₽", region: "Краснодарский край", category: "Производство", result: "Одобрено" },
-  { title: "Мастерская ручных изделий", amount: "290 000 ₽", region: "Ростовская область", category: "Ремёсла", result: "Одобрено" },
-  { title: "Услуги репетитора", amount: "200 000 ₽", region: "Ставропольский край", category: "Образование", result: "Одобрено" },
-  { title: "Мобильная кофейня", amount: "320 000 ₽", region: "Воронежская область", category: "Питание", result: "Одобрено" },
-  { title: "Ателье по ремонту одежды", amount: "180 000 ₽", region: "Белгородская область", category: "Услуги", result: "Одобрено" },
-  { title: "Цветочный магазин", amount: "350 000 ₽", region: "Тверская область", category: "Торговля", result: "Одобрено" },
+  { title: "Кабинет косметолога", amount: "350 000 ₽", region: "Одобрено в декабре 2025", category: "Красота", result: "Одобрено" },
+  { title: "Ферма мясо-молочного направления", amount: "350 000 ₽", region: "Одобрено в декабре 2025", category: "Сельское хозяйство", result: "Одобрено" },
+  { title: "Личное подсобное хозяйство", amount: "200 000 ₽", region: "Одобрено в 2025", category: "ЛПХ", result: "Одобрено" },
+  { title: "Услуги для бизнеса", amount: "350 000 ₽", region: "Одобрено в 2025", category: "Самозанятость", result: "Одобрено" },
+  { title: "Мастерская ручных изделий", amount: "280 000 ₽", region: "Одобрено в 2025", category: "Ремёсла", result: "Одобрено" },
+  { title: "Онлайн-обучение", amount: "200 000 ₽", region: "Одобрено в 2025", category: "Образование", result: "Одобрено" },
 ];
 
 const REVIEWS = [
@@ -135,10 +135,10 @@ const REVIEWS = [
 ];
 
 const STEPS = [
-  { num: "01", title: "Бесплатная консультация", desc: "Анализируем вашу ситуацию и определяем стратегию" },
-  { num: "02", title: "Разработка плана", desc: "Готовим профессиональный бизнес-план под ваш регион" },
-  { num: "03", title: "Сбор документов", desc: "Помогаем с полным пакетом документации для подачи" },
-  { num: "04", title: "Подача заявки", desc: "Сопровождаем на каждом этапе до решения комиссии" },
+  { num: "01", title: "Бесплатная консультация", desc: "Определяем ваши шансы, разбираем ситуацию и помогаем выбрать направление бизнеса" },
+  { num: "02", title: "Договор и анкета", desc: "Заключаем договор, вы заполняете анкету о своём проекте — всё дистанционно" },
+  { num: "03", title: "Разработка бизнес-плана", desc: "Готовим план с финансовыми расчётами и бонусом — вопросами к тесту на предпринимательские компетенции" },
+  { num: "04", title: "Сопровождение до результата", desc: "Вносим правки по запросу соцзащиты и готовим отчётность в течение всего срока контракта" },
 ];
 
 export default function Index() {
@@ -206,7 +206,7 @@ export default function Index() {
           <div className="text-white">
             <div className="inline-flex items-center gap-2 bg-amber-400/20 border border-amber-400/40 text-amber-300 text-sm font-semibold px-4 py-2 rounded-full mb-6 animate-fade-in">
               <Icon name="Star" size={14} className="text-amber-400 fill-amber-400" />
-              Более 10 лет опыта · Высшее экономическое образование
+              Высшее экономическое образование · Работаю дистанционно по всей России
             </div>
             <h1 className="font-oswald text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
               Получите до{" "}
@@ -216,7 +216,7 @@ export default function Index() {
               от государства
             </h1>
             <p className="text-emerald-100 text-xl leading-relaxed mb-8 max-w-lg">
-              Разработаю профессиональный бизнес-план для соцконтракта с гарантией результата. Индивидуальный подход к каждому клиенту.
+              Это не кредит — деньги не нужно возвращать. Помогу получить соцконтракт на развитие своего дела: напишу бизнес-план с вероятностью одобрения 99%.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <button
@@ -234,9 +234,9 @@ export default function Index() {
             </div>
             <div className="grid grid-cols-3 gap-6">
               {[
-                { val: 200, suf: "+", label: "Одобренных заявок" },
-                { val: 10, suf: " лет", label: "Опыта работы" },
-                { val: 97, suf: "%", label: "Положительных решений" },
+                { val: 8, suf: " млн+", label: "Выдано клиентам за декабрь 2025" },
+                { val: 10, suf: " лет", label: "Опыта в разработке бизнес-планов" },
+                { val: 99, suf: "%", label: "Вероятность одобрения" },
               ].map((s) => (
                 <div key={s.label} className="text-center">
                   <div className="font-oswald text-3xl md:text-4xl font-bold text-amber-400">
@@ -349,19 +349,19 @@ export default function Index() {
           <AnimSection>
             <div>
               <span className="text-amber-400 font-semibold text-sm uppercase tracking-widest">О нас</span>
-              <h2 className="font-oswald text-4xl md:text-5xl font-bold mt-2 mb-6">Эксперт с&nbsp;высшим экономическим образованием</h2>
+              <h2 className="font-oswald text-4xl md:text-5xl font-bold mt-2 mb-6">Меня зовут Валентина</h2>
               <p className="text-emerald-100 text-lg leading-relaxed mb-6">
-                Более 10 лет я помогаю людям реализовать свои бизнес-идеи с помощью государственной поддержки. Каждый клиент для меня уникален — я глубоко изучаю вашу ситуацию и разрабатываю план, который убеждает комиссию.
+                Я имею высшее экономическое образование и более 10 лет пишу бизнес-планы. В каждый разработанный мной план вложена частичка моей души — я люблю то, что делаю.
               </p>
               <p className="text-emerald-200 leading-relaxed mb-8">
-                Знаю все требования разных регионов, понимаю, что хотят видеть в документах, и умею представить даже простую идею как выгодный бизнес-проект.
+                Только за декабрь 2025 года мои клиенты получили более 8 миллионов рублей по соцконтракту и различным грантам. Среди проектов — кабинет косметолога, ферма мясо-молочного направления и многое другое. Работаю дистанционно — вы не тратите время на дорогу, я всегда на связи.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { icon: "GraduationCap", text: "Высшее экономическое образование" },
-                  { icon: "MapPin", text: "Работаем по всей России" },
-                  { icon: "Shield", text: "Гарантия до получения одобрения" },
-                  { icon: "Clock", text: "Готовим план за 5–7 дней" },
+                  { icon: "Laptop", text: "Работаю дистанционно по всей России" },
+                  { icon: "Shield", text: "Гарантия: правки бесплатно до одобрения" },
+                  { icon: "Heart", text: "Конфиденциальность и честность" },
                 ].map((f) => (
                   <div key={f.text} className="flex items-start gap-3 bg-white/5 rounded-xl p-4 border border-white/10">
                     <Icon name={f.icon} size={18} className="text-amber-400 mt-0.5 shrink-0" />
@@ -462,19 +462,52 @@ export default function Index() {
         </div>
       </section>
 
+      {/* WHO FITS */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <AnimSection>
+            <div className="text-center mb-10">
+              <span className="text-emerald-600 font-semibold text-sm uppercase tracking-widest">Кому подойдёт</span>
+              <h2 className="font-oswald text-4xl font-bold mt-2 text-gray-900">Кто может получить соцконтракт?</h2>
+            </div>
+          </AnimSection>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { icon: "Users", title: "Малоимущие и многодетные семьи", desc: "Доход ниже прожиточного минимума в регионе" },
+              { icon: "UserX", title: "Безработные граждане", desc: "Официально не трудоустроенные граждане РФ" },
+              { icon: "Briefcase", title: "Самозанятые", desc: "Официально зарегистрированные самозанятые" },
+              { icon: "Shield", title: "Ветераны СВО", desc: "С 2026 года — без учёта уровня дохода" },
+            ].map((c) => (
+              <AnimSection key={c.title}>
+                <div className="bg-white rounded-2xl p-6 border border-emerald-100 shadow-sm text-center hover:shadow-md hover:-translate-y-1 transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center mx-auto mb-4 shadow-md shadow-emerald-100">
+                    <Icon name={c.icon} size={22} className="text-white" />
+                  </div>
+                  <h3 className="font-bold text-gray-900 mb-2 text-sm">{c.title}</h3>
+                  <p className="text-gray-500 text-xs leading-relaxed">{c.desc}</p>
+                </div>
+              </AnimSection>
+            ))}
+          </div>
+          <AnimSection>
+            <p className="text-center text-gray-400 text-sm mt-6">Доход считается за три месяца, предшествующих месяцу обращения</p>
+          </AnimSection>
+        </div>
+      </section>
+
       {/* CTA BANNER */}
       <section className="py-16 bg-gradient-to-r from-amber-400 to-yellow-400">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <AnimSection>
             <h2 className="font-oswald text-4xl md:text-5xl font-bold text-emerald-950 mb-4">
-              Готовы получить до 350 000 ₽?
+              Готовы сделать первый шаг?
             </h2>
-            <p className="text-emerald-800 text-xl mb-8">Запишитесь на бесплатную консультацию — узнайте, подходит ли вам соцконтракт</p>
+            <p className="text-emerald-800 text-xl mb-8">Перестаньте откладывать — начните работать на себя, а не на чужие цели. Бесплатная консультация прямо сейчас!</p>
             <button
               onClick={() => scrollTo("#contacts")}
               className="bg-emerald-900 text-white font-bold text-lg px-10 py-4 rounded-2xl hover:bg-emerald-800 hover:scale-105 transition-all shadow-xl"
             >
-              Записаться на консультацию
+              Получить бесплатную консультацию
             </button>
           </AnimSection>
         </div>
@@ -583,7 +616,7 @@ export default function Index() {
               <span className="font-oswald text-lg font-bold tracking-wide">ProБизнесПлан</span>
             </div>
             <p className="text-emerald-400 text-sm text-center">
-              © 2025 · Профессиональная разработка бизнес-планов для соцконтракта
+              © 2026 · Валентина · Профессиональная разработка бизнес-планов для соцконтракта
             </p>
             <div className="flex gap-4">
               {NAV_LINKS.slice(0, 3).map((l) => (
