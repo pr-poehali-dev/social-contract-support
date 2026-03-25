@@ -204,7 +204,12 @@ export default function Index() {
         
         <div className="relative max-w-7xl mx-auto px-4 py-20 grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white">
-            <div className="inline-flex items-center gap-2 bg-amber-400/20 border border-amber-400/40 text-amber-300 text-sm font-semibold px-4 py-2 rounded-full mb-6 animate-fade-in">
+            <div className="bg-white/5 border border-white/15 rounded-2xl px-5 py-4 mb-6 italic text-emerald-200 text-sm leading-relaxed">
+              <Icon name="Quote" size={16} className="text-amber-400 inline mr-2 mb-1" />
+              «Если у тебя нет своей цели в жизни, то ты будешь работать на того, у кого она есть»
+              <span className="block text-right text-emerald-400 not-italic text-xs mt-1">— Роберт Энтони</span>
+            </div>
+            <div className="inline-flex items-center gap-2 bg-amber-400/20 border border-amber-400/40 text-amber-300 text-sm font-semibold px-4 py-2 rounded-full mb-6">
               <Icon name="Star" size={14} className="text-amber-400 fill-amber-400" />
               Высшее экономическое образование · Работаю дистанционно по всей России
             </div>
@@ -269,6 +274,28 @@ export default function Index() {
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <Icon name="ChevronDown" size={28} className="text-white/50" />
+        </div>
+      </section>
+
+      {/* WHAT IS SOCIAL CONTRACT */}
+      <section className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <AnimSection>
+            <div className="bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center">
+              <div className="flex-shrink-0 w-20 h-20 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center shadow-xl shadow-emerald-200">
+                <Icon name="HandCoins" size={36} className="text-white" />
+              </div>
+              <div>
+                <h2 className="font-oswald text-3xl md:text-4xl font-bold text-gray-900 mb-3">Что такое социальный контракт?</h2>
+                <p className="text-gray-600 text-lg leading-relaxed mb-4">
+                  Это выплата от государства, которую можно получить <strong className="text-emerald-700">безвозмездно</strong> на развитие своего дела или личного подсобного хозяйства. Государство выдаёт до <strong className="text-emerald-700">350 000 ₽</strong> — и эти деньги не нужно возвращать.
+                </p>
+                <p className="text-gray-500 leading-relaxed">
+                  Это реальная возможность воплотить идею работы на себя, а не «на дядю». Главное — правильно оформить бизнес-план, соответствующий требованиям вашего региона.
+                </p>
+              </div>
+            </div>
+          </AnimSection>
         </div>
       </section>
 
@@ -351,11 +378,14 @@ export default function Index() {
             <div>
               <span className="text-amber-400 font-semibold text-sm uppercase tracking-widest">О нас</span>
               <h2 className="font-oswald text-4xl md:text-5xl font-bold mt-2 mb-6">Меня зовут Валентина</h2>
-              <p className="text-emerald-100 text-lg leading-relaxed mb-6">
-                Я имею высшее экономическое образование и более 10 лет пишу бизнес-планы. В каждый разработанный мной план вложена частичка моей души — я люблю то, что делаю.
+              <p className="text-emerald-100 text-lg leading-relaxed mb-4">
+                Я имею высшее экономическое образование. В каждый разработанный мной бизнес-план вложена частичка моей души — я люблю то, что делаю.
+              </p>
+              <p className="text-emerald-200 leading-relaxed mb-4">
+                Только за декабрь 2025 года мои клиенты получили более 8 миллионов рублей по соцконтракту и различным грантам. И это были невероятные проекты: от кабинета косметолога до развития фермы мясо-молочного направления.
               </p>
               <p className="text-emerald-200 leading-relaxed mb-8">
-                Только за декабрь 2025 года мои клиенты получили более 8 миллионов рублей по соцконтракту и различным грантам. Среди проектов — кабинет косметолога, ферма мясо-молочного направления и многое другое. Работаю дистанционно — вы не тратите время на дорогу, я всегда на связи.
+                Работаю дистанционно — вы не тратите драгоценное время на дорогу в пробках, я всегда с вами на связи. При необходимости встреча проходит по видеоконференции.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {[
@@ -503,7 +533,8 @@ export default function Index() {
             <h2 className="font-oswald text-4xl md:text-5xl font-bold text-emerald-950 mb-4">
               Готовы сделать первый шаг?
             </h2>
-            <p className="text-emerald-800 text-xl mb-8">Перестаньте откладывать — начните работать на себя, а не на чужие цели. Бесплатная консультация прямо сейчас!</p>
+            <p className="text-emerald-800 text-xl mb-4">Не упустите возможность изменить свою жизнь! Работайте на себя, а не реализовывайте чужие цели.</p>
+            <p className="text-emerald-900 font-semibold text-lg mb-8">Нажмите «Написать» или «Позвонить» — и получите бесплатную консультацию прямо сейчас!</p>
             <button
               onClick={() => scrollTo("#contacts")}
               className="bg-emerald-900 text-white font-bold text-lg px-10 py-4 rounded-2xl hover:bg-emerald-800 hover:scale-105 transition-all shadow-xl"
